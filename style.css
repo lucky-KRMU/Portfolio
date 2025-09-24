@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+    --bgUpDrk: rgb(0, 50, 63);
+    --bgDownDrk: rgb(5, 89, 110);
+
+    --bgUpLgh: rgb(240, 238, 238);
+    --bgDownLgh: rgb(0, 148, 185);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+.nav-left img{
+    width: 3vw;
+    margin-left: 12px;
+    border: 6px solid white;
+}
+.nav-right button{
+    margin-right: 100px;
+    padding:1vh;
+    font-size: 1rem;
+    border: 5px solid white;
+    background-color: orangered;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 100ms;
+}
+.nav-right button:hover{
+    background-color: rgb(243, 65, 0);
+}
+#hero {
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+}
+
+.bg-up {
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--bgUpDrk);
+    transition-duration: 200ms;
+}
+
+.bg-down {
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--bgDownDrk);
+    transition-duration: 200ms;
+}
+
+.bg-up marquee {
+    font-size: 14vh;
+    font-family: 'Fira code iScript', 'fira code', 'cascadia code', 'consolas', monospace;
+    font-family: 'cascadia code', 'consolas', monospace;
+    color: grey;
+    z-index: -1;
+}
+
+.card{
+    height: 80vh;
+    width: 80vw;
+    /* border: 2px solid black; */
+    border-radius: 12px;
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    background-color: rgb(252, 223, 171);
+    background-color: rgb(255, 136, 0);
+}
+.card-up{
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.card-up-left{
+    font-family: 'alan sans';
+    font-size: 7vh;
+    color: rgb(248, 218, 218);
+    margin-left: 10px;
+}
+.card-up-left h1{
+    font-family: 'figtree';
+    color: white;
+}
+.card-up-right img{
+    width: 20vw;
+    height: 20vw;
+    margin-right: 10px;
+}
+.card-down{
+    padding: 1vh 2vw;
+    font-family: 'alan sans';
+    color: white;
+    font-size: 1em;
+}
+footer{
+    background-color: black;
+    padding: 2vh;
+    text-align: center;
+    font-family: 'alan sans';
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width:800px) {
+    .nav-left img{
+        width: 7vw;
+        border: 2px solid white;
+    }
+    .nav-right button{
+        margin-right: 10px;
+    }
+    .card-up{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card-up-right img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .card-up-left{
+        font-size: 6vw;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-down{
+        font-size: 0.8em;
+    }
+}
