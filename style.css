@@ -48,6 +48,9 @@ header {
 .nav-right button:hover{
     background-color: rgb(243, 65, 0);
 }
+body{
+overflow-x: hidden;
+}
 #hero {
     height: 100vh;
     width: 100vw;
@@ -157,4 +160,5 @@ footer a{
     .card-down{
         font-size: 0.8em;
     }
+
 }
