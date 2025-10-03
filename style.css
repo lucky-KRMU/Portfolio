@@ -113,6 +113,9 @@ overflow-x: hidden;
     height: 20vw;
     margin-right: 10px;
 }
+.card-up-right img:hover{
+    cursor: pointer;
+}
 .card-down{
     padding: 1vh 2vw;
     font-family: 'alan sans';
@@ -162,3 +165,4 @@ footer a{
     }
 
 }
+
