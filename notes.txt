@@ -1,0 +1,4 @@
+This is for the general information about the website.
+
+Header -> navbar -> bg-indigo-600
+body -> main colour -> indigo-950
