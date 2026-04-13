@@ -1,4 +1,8 @@
 This is for the general information about the website.
 
-Header -> navbar -> bg-indigo-600
+Header -> navbar -> bg -> Linear-gradient - top to bottom - indigo 700 to 500
 body -> main colour -> indigo-950
+
+
+Header structure (for adding classes)
+add for all three, sm:, md: and lg:
