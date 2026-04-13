@@ -7,14 +7,6 @@ function App() {
   return (
    <>
     <Header />
-   <div className='w-full h-[90vh] 
-    bg-indigo-950'>
-    h
-   </div>
-   <div className='w-full h-[90vh] 
-    bg-indigo-950'>
-    h
-   </div>
    </>
   )
 }
