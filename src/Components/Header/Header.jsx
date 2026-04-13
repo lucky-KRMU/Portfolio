@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { TiDownload } from "react-icons/ti";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdOutlineCancelPresentation } from "react-icons/md";
 
 function Header() {
 
@@ -9,7 +9,7 @@ function Header() {
 
 
   const handleMenu = () => {
-    console.log("Working!")
+    setToggleMenu(toggleMenu => !toggleMenu);
   }
 
   return (
@@ -33,8 +33,21 @@ function Header() {
             </div>
             <div id="mobile" className='md:hidden'>
               <div>
-                <MdMenu onClick={handleMenu} className='text-3xl cursor-pointer' />
+                {!toggleMenu ?
+                  <MdMenu onClick={handleMenu} className='text-3xl cursor-pointer' />
+                  : <MdOutlineCancelPresentation onClick={handleMenu} className='text-3xl cursor-pointer' />}
               </div>
+              {
+                toggleMenu && <div className='absolute right-10 p-10 rounded-4xl bg-linear-to-b from-indigo-950 to-indigo-800'>
+                  <ul className='flex flex-col items-center justify-between gap-5 text-2xl font-[Onest] drop-shadow-[0_0_10px_rgba(255,255,255,0.9)] cursor-pointer'>
+                    <li className='duration-200 hover:font-semibold'>Home</li>
+                    <li className='duration-200 hover:font-semibold'>Projects</li>
+                    <li className='duration-200 hover:font-semibold'>Contact</li>
+                    <li className='flex items-center justify-center gap-0.5 duration-200 hover:font-semibold'>Resume<TiDownload /></li>
+                  </ul>
+
+                </div>
+              }
             </div>
           </div>
         </nav>
