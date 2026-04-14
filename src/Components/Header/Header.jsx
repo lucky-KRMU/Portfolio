@@ -17,7 +17,7 @@ function Header() {
       <header className='w-full h-[15vh] text-center flex items-center justify-center bg-indigo-950'>
         <nav className='w-[90vw] h-[10vh] 
         bg-linear-to-b from-indigo-700 to-indigo-500
-         text-white  fixed rounded-4xl flex items-center justify-around'>
+         text-white z-50  fixed rounded-4xl flex items-center justify-around'>
           <h1 className='text-3xl drop-shadow-[0_0_10px_rgba(255,255,255,0.9)] font-[Fira_Sans] font-semibold cursor-pointer duration-100 hover:font-bold md:text-4xl'>
 
             Lucky Pawar
