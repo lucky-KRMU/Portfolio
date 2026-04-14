@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
+import MarqueeBanner from './Components/MarqueeText/MarqueeBanner'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
    <>
     <Header />
     <Hero />
+    <MarqueeBanner />
    </>
   )
 }
