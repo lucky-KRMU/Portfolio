@@ -6,3 +6,6 @@ body -> main colour -> indigo-950
 
 Header structure (for adding classes)
 add for all three, sm:, md: and lg:
+
+
+font-families: - Fira code, fira sans, onest
