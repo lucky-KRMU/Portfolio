@@ -22,7 +22,7 @@ function Hero() {
         }
 
 
-        // getAvatarBioLink();
+        getAvatarBioLink();
         // For testing purposes only (Limited internet)
     }, [])
 

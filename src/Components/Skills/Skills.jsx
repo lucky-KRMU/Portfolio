@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaReact, FaHtml5, FaJs, FaNodeJs, FaPython, FaGitAlt, FaFigma  } from "react-icons/fa";
+import { FaReact, FaHtml5, FaJs, FaNodeJs, FaPython, FaGitAlt, FaFigma } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
@@ -76,8 +76,8 @@ function Skills() {
                         lg:grid-cols-3
                         '>
                             <SkillCard icon={<FaGitAlt />} name="Git" />
-                            <SkillCard icon={<FaFigma  />} name="Figma" />
-                            <SkillCard icon={<VscVscode  />} name="VS Code" />
+                            <SkillCard icon={<FaFigma />} name="Figma" />
+                            <SkillCard icon={<VscVscode />} name="VS Code" />
                         </div>
                     </div>
                 </div>
