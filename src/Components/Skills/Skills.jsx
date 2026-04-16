@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaReact, FaHtml5, FaJs } from "react-icons/fa";
+import { FaReact, FaHtml5, FaJs, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
 
 const SkillCard = ({ icon, name }) => {
     return (
@@ -39,6 +40,18 @@ function Skills() {
                             <SkillCard icon={<RiTailwindCssFill />} name="Tailwind" />
                             <SkillCard icon={<FaHtml5 />} name="HTML" />
                             <SkillCard icon={<FaJs />} name="JS" />
+                        </div>
+                    </div>
+                    <div id="backend">
+                        <h4 className='text-xl md:text-2xl font-semibold font-[Fira_Sans] text-white my-5'>Backend</h4>
+                        <div className='grid grid-cols-1
+                        gap-10
+                        
+                        md:grid-cols-2
+                        lg:grid-cols-3
+                        '>
+                            <SkillCard icon={<FaNodeJs />} name="NodeJS" />
+                            <SkillCard icon={<SiExpress />} name="Express" />
                         </div>
                     </div>
                 </div>
