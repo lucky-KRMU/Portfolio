@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Home from './Components/Home/Home.jsx'
+import Projects from './Components/Projects/Projects.jsx'
 
 
 let router = createBrowserRouter([
@@ -18,6 +19,10 @@ let router = createBrowserRouter([
       {
         path: 'home',
         element: <Home />
+      },
+      {
+        path: 'projects',
+        element: <Projects />
       }
     ]
   }
