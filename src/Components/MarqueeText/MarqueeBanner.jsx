@@ -42,85 +42,86 @@ function MarqueeBanner() {
 
   return (
     <>
+      <section id="marqueeTextComponent">
+        <div className=' w-full flex flex-col gap-5 items-center justify-center py-10 bg-linear-to-b from-indigo-500 to-indigo-700 text-white text-2xl md:text-4xl font-[Fira_Code] italic font-semibold'>
+          <hr className='w-full h-2 my-10 bg-sky-50' />
 
-      <div className=' w-full flex flex-col gap-5 items-center justify-center py-10 bg-linear-to-b from-indigo-500 to-indigo-700 text-white text-2xl md:text-4xl font-[Fira_Code] italic font-semibold'>
-        <hr className='w-full h-2 my-10 bg-sky-50' />
 
+          <MarqueeComponent speed={20}>
+            <p className='overflow-hidden'>#ComputerScience</p>
+            <p className='overflow-hidden'>#ArtificialIntelligence</p>
+            <p className='overflow-hidden'>#MachineLearning</p>
+            <p className='overflow-hidden'>#DeepLearning</p>
+            <p className='overflow-hidden'>#DataScience</p>
+            <p className='overflow-hidden'>#AI</p>
+            <p className='overflow-hidden'>#BigData</p>
+            <p className='overflow-hidden'>#NeuralNetworks</p>
+            <p className='overflow-hidden'>#Coding</p>
+            <p className='overflow-hidden'>#Programming</p>
+            <p className='overflow-hidden'>#Python</p>
+            <p className='overflow-hidden'>#JavaScript</p>
+            <p className='overflow-hidden'>#Algorithms</p>
+            <p className='overflow-hidden'>#SoftwareEngineering</p>
+            <p className='overflow-hidden'>#TechInnovation</p>
+            <p className='overflow-hidden'>#Automation</p>
+            <p className='overflow-hidden'>#DataAnalytics</p>
+            <p className='overflow-hidden'>#AIResearch</p>
+            <p className='overflow-hidden'>#CloudComputing</p>
+            <p className='overflow-hidden'>#CyberSecurity</p>
+            <p className='overflow-hidden'>#Robotics</p>
+            <p className='overflow-hidden'>#NaturalLanguageProcessing</p>
+            <p className='overflow-hidden'>#ComputerVision</p>
+            <p className='overflow-hidden'>#TechTrends</p>
+            <p className='overflow-hidden'>#DigitalTransformation</p>
+          </MarqueeComponent>
 
-        <MarqueeComponent speed={20}>
-          <p className='overflow-hidden'>#ComputerScience</p>
-          <p className='overflow-hidden'>#ArtificialIntelligence</p>
-          <p className='overflow-hidden'>#MachineLearning</p>
-          <p className='overflow-hidden'>#DeepLearning</p>
-          <p className='overflow-hidden'>#DataScience</p>
-          <p className='overflow-hidden'>#AI</p>
-          <p className='overflow-hidden'>#BigData</p>
-          <p className='overflow-hidden'>#NeuralNetworks</p>
-          <p className='overflow-hidden'>#Coding</p>
-          <p className='overflow-hidden'>#Programming</p>
-          <p className='overflow-hidden'>#Python</p>
-          <p className='overflow-hidden'>#JavaScript</p>
-          <p className='overflow-hidden'>#Algorithms</p>
-          <p className='overflow-hidden'>#SoftwareEngineering</p>
-          <p className='overflow-hidden'>#TechInnovation</p>
-          <p className='overflow-hidden'>#Automation</p>
-          <p className='overflow-hidden'>#DataAnalytics</p>
-          <p className='overflow-hidden'>#AIResearch</p>
-          <p className='overflow-hidden'>#CloudComputing</p>
-          <p className='overflow-hidden'>#CyberSecurity</p>
-          <p className='overflow-hidden'>#Robotics</p>
-          <p className='overflow-hidden'>#NaturalLanguageProcessing</p>
-          <p className='overflow-hidden'>#ComputerVision</p>
-          <p className='overflow-hidden'>#TechTrends</p>
-          <p className='overflow-hidden'>#DigitalTransformation</p>
-        </MarqueeComponent>
+          <MarqueeComponent speed={40}>
+            <p className='overflow-hidden'>#ComputerScience</p>
+            <p className='overflow-hidden'>#ArtificialIntelligence</p>
+            <p className='overflow-hidden'>#MachineLearning</p>
+            <p className='overflow-hidden'>#DeepLearning</p>
+            <p className='overflow-hidden'>#DataScience</p>
+            <p className='overflow-hidden'>#Programming</p>
+            <p className='overflow-hidden'>#Coding</p>
+            <p className='overflow-hidden'>#SoftwareEngineering</p>
+            <p className='overflow-hidden'>#Algorithms</p>
+            <p className='overflow-hidden'>#DataStructures</p>
+            <p className='overflow-hidden'>#Python</p>
+            <p className='overflow-hidden'>#Java</p>
+            <p className='overflow-hidden'>#CProgramming</p>
+            <p className='overflow-hidden'>#CPP</p>
+            <p className='overflow-hidden'>#JavaScript</p>
+            <p className='overflow-hidden'>#TypeScript</p>
+            <p className='overflow-hidden'>#GoLang</p>
+            <p className='overflow-hidden'>#RustLang</p>
+            <p className='overflow-hidden'>#Kotlin</p>
+            <p className='overflow-hidden'>#Swift</p>
+            <p className='overflow-hidden'>#WebDevelopment</p>
+            <p className='overflow-hidden'>#FrontendDevelopment</p>
+            <p className='overflow-hidden'>#BackendDevelopment</p>
+            <p className='overflow-hidden'>#FullStackDeveloper</p>
+            <p className='overflow-hidden'>#DevOps</p>
+            <p className='overflow-hidden'>#CloudComputing</p>
+            <p className='overflow-hidden'>#Docker</p>
+            <p className='overflow-hidden'>#Kubernetes</p>
+            <p className='overflow-hidden'>#Git</p>
+            <p className='overflow-hidden'>#OpenSource</p>
+            <p className='overflow-hidden'>#CyberSecurity</p>
+            <p className='overflow-hidden'>#Blockchain</p>
+            <p className='overflow-hidden'>#OperatingSystems</p>
+            <p className='overflow-hidden'>#DatabaseManagement</p>
+            <p className='overflow-hidden'>#SQL</p>
+            <p className='overflow-hidden'>#NoSQL</p>
+            <p className='overflow-hidden'>#APIDevelopment</p>
+            <p className='overflow-hidden'>#SystemDesign</p>
+            <p className='overflow-hidden'>#CompetitiveProgramming</p>
+            <p className='overflow-hidden'>#TechCareers</p>
+          </MarqueeComponent>
 
-        <MarqueeComponent speed={40}>
-          <p className='overflow-hidden'>#ComputerScience</p>
-          <p className='overflow-hidden'>#ArtificialIntelligence</p>
-          <p className='overflow-hidden'>#MachineLearning</p>
-          <p className='overflow-hidden'>#DeepLearning</p>
-          <p className='overflow-hidden'>#DataScience</p>
-          <p className='overflow-hidden'>#Programming</p>
-          <p className='overflow-hidden'>#Coding</p>
-          <p className='overflow-hidden'>#SoftwareEngineering</p>
-          <p className='overflow-hidden'>#Algorithms</p>
-          <p className='overflow-hidden'>#DataStructures</p>
-          <p className='overflow-hidden'>#Python</p>
-          <p className='overflow-hidden'>#Java</p>
-          <p className='overflow-hidden'>#CProgramming</p>
-          <p className='overflow-hidden'>#CPP</p>
-          <p className='overflow-hidden'>#JavaScript</p>
-          <p className='overflow-hidden'>#TypeScript</p>
-          <p className='overflow-hidden'>#GoLang</p>
-          <p className='overflow-hidden'>#RustLang</p>
-          <p className='overflow-hidden'>#Kotlin</p>
-          <p className='overflow-hidden'>#Swift</p>
-          <p className='overflow-hidden'>#WebDevelopment</p>
-          <p className='overflow-hidden'>#FrontendDevelopment</p>
-          <p className='overflow-hidden'>#BackendDevelopment</p>
-          <p className='overflow-hidden'>#FullStackDeveloper</p>
-          <p className='overflow-hidden'>#DevOps</p>
-          <p className='overflow-hidden'>#CloudComputing</p>
-          <p className='overflow-hidden'>#Docker</p>
-          <p className='overflow-hidden'>#Kubernetes</p>
-          <p className='overflow-hidden'>#Git</p>
-          <p className='overflow-hidden'>#OpenSource</p>
-          <p className='overflow-hidden'>#CyberSecurity</p>
-          <p className='overflow-hidden'>#Blockchain</p>
-          <p className='overflow-hidden'>#OperatingSystems</p>
-          <p className='overflow-hidden'>#DatabaseManagement</p>
-          <p className='overflow-hidden'>#SQL</p>
-          <p className='overflow-hidden'>#NoSQL</p>
-          <p className='overflow-hidden'>#APIDevelopment</p>
-          <p className='overflow-hidden'>#SystemDesign</p>
-          <p className='overflow-hidden'>#CompetitiveProgramming</p>
-          <p className='overflow-hidden'>#TechCareers</p>
-        </MarqueeComponent>
+          <hr className='w-full h-2 my-10 bg-sky-50' />
 
-        <hr className='w-full h-2 my-10 bg-sky-50' />
-
-      </div>
+        </div>
+      </section>
     </>
   )
 }
