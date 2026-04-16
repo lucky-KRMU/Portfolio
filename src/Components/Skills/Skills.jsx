@@ -1,7 +1,8 @@
 import React from 'react'
-import { FaReact, FaHtml5, FaJs, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaReact, FaHtml5, FaJs, FaNodeJs, FaPython, FaGitAlt, FaFigma  } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 const SkillCard = ({ icon, name }) => {
     return (
@@ -64,6 +65,19 @@ function Skills() {
                         '>
                             <SkillCard icon={<FaPython />} name="Python" />
                             <SkillCard icon={<FaJs />} name="JS" />
+                        </div>
+                    </div>
+                    <div id="tools">
+                        <h4 className='text-xl md:text-2xl font-semibold font-[Fira_Sans] text-white my-5'>Tools</h4>
+                        <div className='grid grid-cols-1
+                        gap-10
+                        
+                        md:grid-cols-2
+                        lg:grid-cols-3
+                        '>
+                            <SkillCard icon={<FaGitAlt />} name="Git" />
+                            <SkillCard icon={<FaFigma  />} name="Figma" />
+                            <SkillCard icon={<VscVscode  />} name="VS Code" />
                         </div>
                     </div>
                 </div>
