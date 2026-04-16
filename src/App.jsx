@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import Header from './Components/Header/Header'
-import Hero from './Components/Hero/Hero'
-import MarqueeBanner from './Components/MarqueeText/MarqueeBanner'
+import Home from './Components/Home/Home'
 
 function App() {
 
   return (
    <>
     <Header />
-    <Hero />
-    <MarqueeBanner />
+    <Home />
    </>
   )
 }

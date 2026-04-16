@@ -9,3 +9,6 @@ add for all three, sm:, md: and lg:
 
 
 font-families: - Fira code, fira sans, onest
+
+Hero Gradient -> indigo-950 to indigo-500
+Marquee Gradient -> indigo-500 to indigo-700
