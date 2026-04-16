@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router';
 import { TiDownload } from "react-icons/ti";
 import { MdMenu, MdOutlineCancelPresentation } from "react-icons/md";
 
@@ -25,10 +26,24 @@ function Header() {
           <div>
             <div id='desktop' className=''>
               <ul className='hidden md:flex items-center justify-between gap-5 text-2xl font-[Onest] drop-shadow-[0_0_10px_rgba(255,255,255,0.9)] cursor-pointer'>
-                <li className='duration-200 hover:font-semibold'>Home</li>
-                <li className='duration-200 hover:font-semibold'>Projects</li>
-                <li className='duration-200 hover:font-semibold'>Contact</li>
-                <li className='flex items-center justify-center gap-0.5 duration-200 hover:font-semibold'>Resume<TiDownload /></li>
+                <li className='duration-200 hover:font-semibold'>
+                  <NavLink to="/" className={
+                    ({ isActive }) => isActive ? "font-extrabold" : ""
+                  }>Home</NavLink>
+                </li>
+                <li className='duration-200 hover:font-semibold'>
+                  <NavLink to="projects" className={
+                    ({ isActive }) => isActive ? "font-extrabold" : ""
+                  }>Projects</NavLink></li>
+                <li className='duration-200 hover:font-semibold'>
+                  <NavLink to="contact" className={
+                    ({ isActive }) => isActive ? "font-extrabold" : ""
+                  }>Contact</NavLink></li>
+                <li className='duration-200 hover:font-semibold'>
+                  <NavLink to="download/resume" className={`flex items-center justify-center gap-0.5 ${({ isActive }) => isActive ? "font-extrabold" : ""
+                    } `}>
+                    Resume<TiDownload />
+                  </NavLink></li>
               </ul>
             </div>
             <div id="mobile" className='md:hidden'>
