@@ -20,7 +20,7 @@ const ProjectCard = ({ projectName, projectDescription, projectLink }) => {
       hover:scale-[1.05]
       hover:bg-sky-500'>
         <h1 className='text-2xl md:text-3xl text-white font-[Fira_Code] font-semibold'>{projectName}</h1>
-        <h4 className='text-l md:text-l text-white font-[Fira_Sans]'>{projectDescription}</h4>
+        <h4 className='text-l md:text-l text-white font-[Fira_Sans] text-justify'>{projectDescription}</h4>
         <button className='self-end font-[Onest] font-semibold text-white text-l p-2 my-1 bg-indigo-800 rounded-2xl outline-2 outline-white duration-75 cursor-pointer
         flex items-center justify-center gap-1
 
