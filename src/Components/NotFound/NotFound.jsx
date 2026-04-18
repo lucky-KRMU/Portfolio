@@ -1,6 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 function NotFound() {
+
+  useEffect(()=>{
+          // updating the title
+          document.title = "Not Found - Portfolio"
+      }, [])
+
   return (
     <>
     <section id="notfound" className='w-full h-[50vh] bg-linear-to-b from-indigo-950 to-indigo-800 flex flex-col items-center justify-center text-white'>

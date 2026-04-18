@@ -46,6 +46,9 @@ function Projects() {
 
   useEffect(() => {
 
+    // updating the title
+    document.title = "Projects - Lucky Pawar"
+
     // function to get all the public repos from github
     const getRepos = async () => {
       // the first link is for the github api
@@ -91,7 +94,7 @@ function Projects() {
                       lg:gap-5'>
               {projectsArr.map((obj) => {
                 return (
-                    <ProjectCard key={obj.id} projectName={obj.name} projectDescription={obj.description || "DESCRIPTION UNAVAILABLE"} projectLink={obj.html_url} />
+                  <ProjectCard key={obj.id} projectName={obj.name} projectDescription={obj.description || "DESCRIPTION UNAVAILABLE"} projectLink={obj.html_url} />
                 );
               })}
             </div>

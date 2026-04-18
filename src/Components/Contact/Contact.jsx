@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { RiContactsFill } from "react-icons/ri";
 import { HiOutlineMail } from "react-icons/hi";import { MdOutlineLocalPhone } from "react-icons/md";
 
 function Contact() {
+
+    useEffect(()=>{
+            // updating the title
+            document.title = "Contact - Lucky Pawar"
+        }, [])
+
     return (
         <>
             <section id="contact" className='w-full h-[50vh] bg-linear-to-b from-indigo-950 to-indigo-800'>
