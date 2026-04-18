@@ -36,21 +36,23 @@ function Footer() {
                         </div>
                     </div>
                     <div id="WebSiteLinks">
-                        <div  className='text-white font-[Fira_Sans] flex flex-col items-center justify-center gap-2
+                        <div className='text-white font-[Fira_Sans] flex flex-col items-center justify-center gap-2
                     
                     md:gap-0.5'>
                             <h3 className='text-2xl md:text-3xl'>Other Links</h3>
                             <div className='grid grid-cols-2 gap-2 text-center text-l
                             
                             md:gap-0.5'>
-                                <Link to="" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Home</Link>
-                                <Link to="" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Projects</Link>
-                                <Link to="" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Contact</Link>
-                                <Link to="" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>About</Link>
-                                <Link to="" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Bio.</Link>
+                                <Link to="/" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Home</Link>
+                                <Link to="/projects" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Projects</Link>
+                                <Link to="/contact" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Contact</Link>
+                                <Link to="/about" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>About</Link>
+                                <Link to="/" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Bio.</Link>
                                 <Link to="/home" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Skills</Link>
-                                <Link to="" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Download CV</Link>
-                                <Link to="" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Other</Link>
+                                <a href="https://raw.githubusercontent.com/lucky-KRMU/Portfolio/main/public/Resume.pdf" download="Lucky_Pawar_Resume.pdf" className={`duration-200 underline-offset-4 hover:underline hover:text-sky-500`}>
+                                    Download Resume
+                                </a>
+                                <Link to="/other" className='duration-200 underline-offset-4 hover:underline hover:text-sky-500'>Other</Link>
                             </div>
                         </div>
                     </div>
