@@ -55,10 +55,24 @@ function Header() {
               {
                 toggleMenu && <div className='absolute right-10 p-10 rounded-4xl bg-linear-to-b from-indigo-950 to-indigo-800'>
                   <ul className='flex flex-col items-center justify-between gap-5 text-2xl font-[Onest] drop-shadow-[0_0_10px_rgba(255,255,255,0.9)] cursor-pointer'>
-                    <li className='duration-200 hover:font-semibold'>Home</li>
-                    <li className='duration-200 hover:font-semibold'>Projects</li>
-                    <li className='duration-200 hover:font-semibold'>Contact</li>
-                    <li className='flex items-center justify-center gap-0.5 duration-200 hover:font-semibold'>Resume<TiDownload /></li>
+                    <li className='duration-200 hover:font-semibold'>
+                      <NavLink to="/" className={
+                        ({ isActive }) => isActive ? "font-extrabold" : ""
+                      }>Home</NavLink>
+                    </li>
+                    <li className='duration-200 hover:font-semibold'>
+                      <NavLink to="projects" className={
+                        ({ isActive }) => isActive ? "font-extrabold" : ""
+                      }>Projects</NavLink></li>
+                    <li className='duration-200 hover:font-semibold'>
+                      <NavLink to="contact" className={
+                        ({ isActive }) => isActive ? "font-extrabold" : ""
+                      }>Contact</NavLink></li>
+                    <li className='duration-200 hover:font-semibold'>
+                      <NavLink to="download/resume" className={`flex items-center justify-center gap-0.5 ${({ isActive }) => isActive ? "font-extrabold" : ""
+                        } `}>
+                        Resume<TiDownload />
+                      </NavLink></li>
                   </ul>
 
                 </div>
