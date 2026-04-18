@@ -11,7 +11,13 @@ function Hero() {
     useEffect(() => {
         // For Avatar, Bio Link
         const getAvatarBioLink = async () => {
-            let response = await fetch("https://api.github.com/users/lucky-KRMU");
+
+            // the first link is for the github api
+            // the second link is for the online hosted file
+            let url_api = "https://api.github.com/users/lucky-KRMU";
+            let url = "https://raw.githubusercontent.com/lucky-KRMU/Portfolio/main/src/Data/lucky-KRMU.json"
+
+            let response = await fetch(url);
             let data = await response.json();
 
             let Avatar_url = data.avatar_url;

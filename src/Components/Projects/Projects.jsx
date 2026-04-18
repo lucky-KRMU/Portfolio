@@ -48,7 +48,10 @@ function Projects() {
 
     // function to get all the public repos from github
     const getRepos = async () => {
-      let url = "https://api.github.com/users/lucky-KRMU/repos";
+      // the first link is for the github api
+      // the second link is for the online hosted file
+      let url_api = "https://api.github.com/users/lucky-KRMU/repos";
+      let url = "https://raw.githubusercontent.com/lucky-KRMU/Portfolio/main/src/Data/repos.json"
 
       let response = await fetch(url);
       let data = await response.json();
