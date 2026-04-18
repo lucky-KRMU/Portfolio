@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { MdConstruction } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa"
 
-const ProjectCard = ({ projectName, projectDescription }) => {
+const ProjectCard = ({ projectName, projectDescription, projectLink }) => {
+
+  const goToLink = () => {
+    window.location.href = projectLink;
+  }
+
   return (
     <>
       <div className='w-[50vw] p-5 bg-transparent rounded-xl border-double border-white border-4 cursor-pointer
@@ -15,7 +20,7 @@ const ProjectCard = ({ projectName, projectDescription }) => {
       hover:scale-[1.05]
       hover:bg-sky-500'>
         <h1 className='text-2xl md:text-3xl text-white font-[Fira_Code] font-semibold'>{projectName}</h1>
-        <h4 className='text-xl text-white font-[Fira_Sans]'>{projectDescription}</h4>
+        <h4 className='text-l md:text-l text-white font-[Fira_Sans]'>{projectDescription}</h4>
         <button className='self-end font-[Onest] font-semibold text-white text-l p-2 my-1 bg-indigo-800 rounded-2xl outline-2 outline-white duration-75 cursor-pointer
         flex items-center justify-center gap-1
 
@@ -24,7 +29,10 @@ const ProjectCard = ({ projectName, projectDescription }) => {
         
         md:text-xl
         md:p-4
-        md:rounded-4xl'>View Repo<FaLongArrowAltRight /></button>
+        md:rounded-4xl'
+        
+        onClick={goToLink}
+        >View Repo<FaLongArrowAltRight /></button>
       </div>
     </>
   );
@@ -72,7 +80,7 @@ function Projects() {
           {
             projectsArr.map((obj) => {
               return (
-                <ProjectCard key={obj.id} projectName={obj.name} projectDescription={obj.description || "DESCRIPTION UNAVAILABLE"} />
+                <ProjectCard key={obj.id} projectName={obj.name} projectDescription={obj.description || "DESCRIPTION UNAVAILABLE"} projectLink={obj.html_url} />
               );
             })
           }
