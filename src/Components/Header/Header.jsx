@@ -40,10 +40,9 @@ function Header() {
                     ({ isActive }) => isActive ? "font-extrabold" : ""
                   }>Contact</NavLink></li>
                 <li className='duration-200 hover:font-semibold'>
-                  <NavLink to="download/resume" className={`flex items-center justify-center gap-0.5 ${({ isActive }) => isActive ? "font-extrabold" : ""
-                    } `}>
+                  <a href="/resume.pdf" download="Lucky_Pawar_Resume.pdf" target='_blank' rel='noopener noreferrer' className={`flex items-center justify-center gap-0.5`}>
                     Resume<TiDownload />
-                  </NavLink></li>
+                  </a></li>
               </ul>
             </div>
             <div id="mobile" className='md:hidden'>
@@ -69,10 +68,10 @@ function Header() {
                         ({ isActive }) => isActive ? "font-extrabold" : ""
                       }>Contact</NavLink></li>
                     <li className='duration-200 hover:font-semibold'>
-                      <NavLink to="download/resume" className={`flex items-center justify-center gap-0.5 ${({ isActive }) => isActive ? "font-extrabold" : ""
+                      <a href="/resume.pdf" download="Lucky_Pawar_Resume.pdf" className={`flex items-center justify-center gap-0.5 ${({ isActive }) => isActive ? "font-extrabold" : ""
                         } `}>
                         Resume<TiDownload />
-                      </NavLink></li>
+                      </a></li>
                   </ul>
 
                 </div>
