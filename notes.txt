@@ -16,3 +16,4 @@ Skills Gradient -> indigo-700 to indigo-800
 footer Gradient -> indigo-950
 
 projects gradient --> indigo-950 to indigo-800
+contact gradient --> indigo-950 to indigo-800
