@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { MdConstruction } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa"
 
@@ -6,7 +6,7 @@ const ProjectCard = ({ projectName, projectDescription }) => {
   return (
     <>
       <div className='w-[50vw] p-5 bg-transparent rounded-xl border-double border-white border-4 cursor-pointer
-      flex flex-col items-start justify-center gap-1 duration-200 ease-in-out
+      flex flex-col items-start justify-center gap-1 duration-200 ease-in-out text-wrap
       
       md:w-[30vw]
       lg:w-[30vw]
@@ -14,7 +14,7 @@ const ProjectCard = ({ projectName, projectDescription }) => {
       
       hover:scale-[1.05]
       hover:bg-sky-500'>
-        <h1 className='text-3xl text-white font-[Fira_Code] font-semibold'>{projectName}</h1>
+        <h1 className='text-2xl md:text-3xl text-white font-[Fira_Code] font-semibold'>{projectName}</h1>
         <h4 className='text-xl text-white font-[Fira_Sans]'>{projectDescription}</h4>
         <button className='self-end font-[Onest] font-semibold text-white text-l p-2 my-1 bg-indigo-800 rounded-2xl outline-2 outline-white duration-75 cursor-pointer
         flex items-center justify-center gap-1
@@ -32,6 +32,27 @@ const ProjectCard = ({ projectName, projectDescription }) => {
 
 
 function Projects() {
+
+  let [projectsArr, setProjectsArr] = useState([]);
+
+  useEffect(() => {
+
+    // function to get all the public repos from github
+    const getRepos = async () => {
+      let url = "https://api.github.com/users/lucky-KRMU/repos";
+
+      let response = await fetch(url);
+      let data = await response.json();
+
+      setProjectsArr(data)
+
+    }
+
+    // calling the function
+    getRepos();
+
+  }, [])
+
   return (
     <>
       <section id="projects" className='w-full p-5 bg-linear-to-b from-indigo-950 to-indigo-800 flex flex-col gap-2 items-center justify-center'>
@@ -46,12 +67,17 @@ function Projects() {
         md:gap-4
         lg:grid-cols-3
         lg:gap-5'>
-          <ProjectCard projectName="Name" projectDescription="Description" />
-          <ProjectCard projectName="Name" projectDescription="Description" />
-          <ProjectCard projectName="Name" projectDescription="Description" />
-          <ProjectCard projectName="Name" projectDescription="Description" />
-          <ProjectCard projectName="Name" projectDescription="Description" />
+
+
+          {
+            projectsArr.map((obj) => {
+              return (
+                <ProjectCard key={obj.id} projectName={obj.name} projectDescription={obj.description || "DESCRIPTION UNAVAILABLE"} />
+              );
+            })
+          }
         </div>
+
       </section>
     </>
   )
