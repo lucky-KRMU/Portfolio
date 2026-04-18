@@ -30,8 +30,8 @@ const ProjectCard = ({ projectName, projectDescription, projectLink }) => {
         md:text-xl
         md:p-4
         md:rounded-4xl'
-        
-        onClick={goToLink}
+
+          onClick={goToLink}
         >View Repo<FaLongArrowAltRight /></button>
       </div>
     </>
@@ -42,6 +42,7 @@ const ProjectCard = ({ projectName, projectDescription, projectLink }) => {
 function Projects() {
 
   let [projectsArr, setProjectsArr] = useState([]);
+  let [loading, setLoading] = useState(true);
 
   useEffect(() => {
 
@@ -52,7 +53,8 @@ function Projects() {
       let response = await fetch(url);
       let data = await response.json();
 
-      setProjectsArr(data)
+      setProjectsArr(data);
+      setLoading(false);
 
     }
 
@@ -69,22 +71,28 @@ function Projects() {
       md:text-5xl
       md:hover:gap-4
       md:hover:font-bold'><MdConstruction /> | <span>Projects</span></h1>
-        <div id="projectsCards" className='grid grid-cols-1 gap-5
+
+
+        {
+          // add loading card and resstyle accordingly
+          loading ?
+            <>
+              <div className='font-bold text-4xl py-[30vh] font-[Onest] text-center text-sky-500 animate-pulse'>Loading...</div>
+            </>
+            :
+            <div id="projectsCards" className='grid grid-cols-1 gap-5
         
-        md:grid-cols-2
-        md:gap-4
-        lg:grid-cols-3
-        lg:gap-5'>
-
-
-          {
-            projectsArr.map((obj) => {
-              return (
-                <ProjectCard key={obj.id} projectName={obj.name} projectDescription={obj.description || "DESCRIPTION UNAVAILABLE"} projectLink={obj.html_url} />
-              );
-            })
-          }
-        </div>
+                      md:grid-cols-2
+                      md:gap-4
+                      lg:grid-cols-3
+                      lg:gap-5'>
+              {projectsArr.map((obj) => {
+                return (
+                    <ProjectCard key={obj.id} projectName={obj.name} projectDescription={obj.description || "DESCRIPTION UNAVAILABLE"} projectLink={obj.html_url} />
+                );
+              })}
+            </div>
+        }
 
       </section>
     </>
