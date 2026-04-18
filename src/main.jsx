@@ -1,4 +1,3 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -6,6 +5,7 @@ import { RouterProvider, createHashRouter } from 'react-router'
 import Home from './Components/Home/Home.jsx'
 import Projects from './Components/Projects/Projects.jsx'
 import Contact from './Components/Contact/Contact.jsx'
+import NotFound from './Components/NotFound/NotFound.jsx'
 
 
 let router = createHashRouter([
@@ -28,6 +28,10 @@ let router = createHashRouter([
       {
         path: 'contact',
         element: <Contact />
+      },
+      {
+        path: "*",
+        element: <NotFound />
       }
     ]
   }
