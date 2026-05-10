@@ -21,7 +21,7 @@ function Footer() {
                         md:flex-row 
                         md:text-3xl
                         md:gap-10'>
-                            <Link to="https://www.x.com">
+                            <Link to="https://www.x.com/luckythecoder">
                                 <FaSquareXTwitter className='duration-200 ease-in-out hover:text-sky-500 hover:scale-[1.2]' />
                             </Link>
                             <Link to="https://www.linkedin.com/in/luckypawar">
