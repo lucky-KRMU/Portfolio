@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router';
-import { FaHeart, FaLinkedin } from "react-icons/fa";
+import { FaHeart, FaLinkedin, FaKaggle  } from "react-icons/fa";
 import { FaSquareXTwitter, FaSquareGithub, FaSquareInstagram } from "react-icons/fa6";
 
 function Footer() {
@@ -32,6 +32,9 @@ function Footer() {
                             </Link>
                             <Link to="https://www.instagram.com/luckythecoder">
                                 <FaSquareInstagram className='duration-200 ease-in-out hover:text-sky-500 hover:scale-[1.2]' />
+                            </Link>
+                            <Link to="https://www.kaggle.com/luckythecoder">
+                            <FaKaggle className='duration-200 ease-in-out hover:text-sky-500 hover:scale-[1.2]'/>
                             </Link>
                         </div>
                     </div>
