@@ -1,13 +1,9 @@
 import React from 'react'
 import { FaReact, FaHtml5, FaJs, FaNodeJs, FaPython, FaGitAlt, FaFigma } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { SiTensorflow } from "react-icons/si";
-import { SiPandas } from "react-icons/si";
-import { SiKeras } from "react-icons/si";
-import { SiNumpy } from "react-icons/si";
-import { SiGooglecolab } from "react-icons/si";
+import { SiExpress, SiTensorflow, SiPandas, SiKeras, SiNumpy, SiGooglecolab } from "react-icons/si";
+import { BsGraphUp } from "react-icons/bs";
 
 const SkillCard = ({ icon, name }) => {
     return (
@@ -84,6 +80,7 @@ function Skills() {
                             <SkillCard icon={<SiPandas />} name="Pandas" />
                             <SkillCard icon={<SiKeras />} name="Keras" />
                             <SkillCard icon={<SiNumpy />} name="Numpy" />
+                            <SkillCard icon={<BsGraphUp />} name="Matplotlib" />
                         </div>
                     </div>
                     <div id="tools">
