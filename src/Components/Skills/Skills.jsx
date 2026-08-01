@@ -3,6 +3,11 @@ import { FaReact, FaHtml5, FaJs, FaNodeJs, FaPython, FaGitAlt, FaFigma } from "r
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { SiTensorflow } from "react-icons/si";
+import { SiPandas } from "react-icons/si";
+import { SiKeras } from "react-icons/si";
+import { SiNumpy } from "react-icons/si";
+import { SiGooglecolab } from "react-icons/si";
 
 const SkillCard = ({ icon, name }) => {
     return (
@@ -17,7 +22,7 @@ const SkillCard = ({ icon, name }) => {
          md:hover:scale-[1.2]
         '>
                 {icon}
-                <h6 className='text-white font-semibold font-[Fira_Code] '>{name}</h6>
+                <h6 className='text-white text-center font-semibold font-[Fira_Code] '>{name}</h6>
             </div>
         </>
     );
@@ -67,6 +72,20 @@ function Skills() {
                             <SkillCard icon={<FaJs />} name="JS" />
                         </div>
                     </div>
+                    <div id="aiandds">
+                        <h4 className='text-xl md:text-2xl font-semibold font-[Fira_Sans] text-white my-5'>AI &amp; Data Science</h4>
+                        <div className='grid grid-cols-1
+                        gap-10
+                        
+                        md:grid-cols-2
+                        lg:grid-cols-3
+                        '>
+                            <SkillCard icon={<SiTensorflow />} name="Tensorflow" />
+                            <SkillCard icon={<SiPandas />} name="Pandas" />
+                            <SkillCard icon={<SiKeras />} name="Keras" />
+                            <SkillCard icon={<SiNumpy />} name="Numpy" />
+                        </div>
+                    </div>
                     <div id="tools">
                         <h4 className='text-xl md:text-2xl font-semibold font-[Fira_Sans] text-white my-5'>Tools</h4>
                         <div className='grid grid-cols-1
@@ -78,6 +97,7 @@ function Skills() {
                             <SkillCard icon={<FaGitAlt />} name="Git" />
                             <SkillCard icon={<FaFigma />} name="Figma" />
                             <SkillCard icon={<VscVscode />} name="VS Code" />
+                            <SkillCard icon={<SiGooglecolab />} name="Google Colab" />
                         </div>
                     </div>
                 </div>
